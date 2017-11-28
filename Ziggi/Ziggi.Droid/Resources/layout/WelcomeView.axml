@@ -38,7 +38,9 @@
           android:id="@+id/btnEnter"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="Entrar"/>
+          android:text="Entrar"
+          local:MvxBind="Click GoToMainPageCommand"
+          />
     </LinearLayout>
   
   </FrameLayout>

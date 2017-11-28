@@ -1,19 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
+using Android.Content.PM;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+using Android.Support.V4.Widget;
+using MvvmCross.Droid.Support.V7.AppCompat;
+using Ziggi.Core.ViewModels;
 
 namespace Ziggi.Droid.Views
 {
-    public class MainView : BaseView
+    [Activity(
+        Label = "Main Activity",
+        Theme = "@style/MyTheme",
+        LaunchMode = LaunchMode.SingleTop,
+        Name = "ziggi.droid.views.MainView"
+    )]
+    public class MainView : MvxAppCompatActivity<MainViewModel>
     {
-        protected override int LayoutResource => Resource.Layout.MainView;
+        public DrawerLayout DrawerLayout;
+
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            SetContentView(Resource.Layout.activity_main);
+
+            DrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+
+            if (bundle == null)
+                ViewModel.ShowMenu();
+        }
     }
 }

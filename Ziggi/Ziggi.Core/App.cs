@@ -1,8 +1,9 @@
 using MvvmCross.Platform.IoC;
+using MvvmCross.Core.ViewModels;
 
 namespace Ziggi.Core
 {
-    public class App : MvvmCross.Core.ViewModels.MvxApplication
+    public class App : MvxApplication
     {
         public override void Initialize()
         {
