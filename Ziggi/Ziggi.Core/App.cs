@@ -11,7 +11,7 @@ namespace Ziggi.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterNavigationServiceAppStart<ViewModels.FirstViewModel>();
+            RegisterNavigationServiceAppStart<ViewModels.WelcomeViewModel>();
         }
     }
 }

@@ -12,6 +12,16 @@
     <PackageReference Include="MvvmCross.Binding" Version="5.2.1" />
     <PackageReference Include="MvvmCross.Core" Version="5.2.1" />
     <PackageReference Include="MvvmCross.Platform" Version="5.2.1" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.91635" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\Login\" />
+    <Folder Include="ViewModels\Feed\" />
+    <Folder Include="ViewModels\Favorites\" />
+    <Folder Include="ViewModels\Places\" />
   </ItemGroup>
     
 </Project>

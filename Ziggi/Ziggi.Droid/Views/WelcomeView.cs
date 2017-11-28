@@ -4,9 +4,9 @@ using Android.OS;
 namespace Ziggi.Droid.Views
 {
     [Activity(Label = "View for FirstViewModel")]
-    public class FirstView : BaseView
+    public class WelcomeView : BaseView
     {
-        protected override int LayoutResource => Resource.Layout.FirstView;
+        protected override int LayoutResource => Resource.Layout.WelcomeView;
 
         protected override void OnCreate(Bundle bundle)
         {

@@ -2,8 +2,8 @@ using MvvmCross.Core.ViewModels;
 
 namespace Ziggi.Core.ViewModels
 {
-    public class FirstViewModel
-        : MvxViewModel
+    public class WelcomeViewModel
+        : BaseViewModel
     {
         string hello = "Hello MvvmCross";
         public string Hello
